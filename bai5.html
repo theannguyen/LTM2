@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = prompt("Nhập vào mảng 1: ");
+    let arr2 = prompt("Nhập vào mảng 2: ");
+    let flag
+    if (arr1.length !== arr2.length) {
+        flag = false;
+    } else {
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] !== arr2[i]) {
+                flag = false;
+                break;
+            }
+            flag = true;
+        }
+    }
+    if (flag) {
+        alert("2 mảng giống nhau");
+    } else {
+        alert("2 mảng khác nhau");
+    }
+</script>
+</body>
+</html>
